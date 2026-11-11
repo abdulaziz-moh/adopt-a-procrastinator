@@ -4,15 +4,15 @@ The user brief defines the product. Visual decisions live in DESIGN.md.
 
 ## Canonical UI Map
 
-| Capability | Canonical owner | Source of truth | Allowed variants | Verification |
-| --- | --- | --- | --- | --- |
-| Select/Listbox | Native priority select in TaskForm | This contract | native OS popup accepted | E2E select + keyboard |
-| Date | src/game.js localDate/dateGap | This contract | browser-local Gregorian calendar; no date input | unit date boundaries |
-| Form | TaskForm and PetAdoption, shared field styles | This contract | synchronous create/adopt | invalid-input E2E |
-| Scrollbar | src/styles.css global baseline | DESIGN.md | no hidden scrollbars | CSS + narrow browser |
-| Toast | App feedback state and shared Toast | This contract | success/info, Undo action | live-region E2E |
-| CRUD | gameReducer + TaskManager | This contract | create, irrevocable completion, reversible deletion | full-flow E2E |
-| Dialog | Shared Modal native dialog | This contract | task, help, evolution, reset | Escape, focus restoration, keyboard |
+| Capability     | Canonical owner                               | Source of truth | Allowed variants                                    | Verification                        |
+| -------------- | --------------------------------------------- | --------------- | --------------------------------------------------- | ----------------------------------- |
+| Select/Listbox | Native priority select in TaskForm            | This contract   | native OS popup accepted                            | E2E select + keyboard               |
+| Date           | src/game.js localDate/dateGap                 | This contract   | browser-local Gregorian calendar; no date input     | unit date boundaries                |
+| Form           | TaskForm and PetAdoption, shared field styles | This contract   | synchronous create/adopt                            | invalid-input E2E                   |
+| Scrollbar      | src/styles.css global baseline                | DESIGN.md       | no hidden scrollbars                                | CSS + narrow browser                |
+| Toast          | App feedback state and shared Toast           | This contract   | success/info, Undo action                           | live-region E2E                     |
+| CRUD           | gameReducer + TaskManager                     | This contract   | create, irrevocable completion, reversible deletion | full-flow E2E                       |
+| Dialog         | Shared Modal native dialog                    | This contract   | task, help, evolution, reset                        | Escape, focus restoration, keyboard |
 
 ## Behavior
 
